@@ -1,0 +1,37 @@
+<div class="row">
+    <h1>Bienvenido a tu carrito</h1>
+</div>
+
+{{#each productos }}
+   <ul class="collection">  
+          <li class="collection-item avatar">
+            <img src="images/{{ img_name }}" alt="" class="circle">
+            <span class="title">{{ name }}</span>
+            <p>{{ description }} <br>
+              <a class="blue-text text-darken-4">$ {{ price }}</a>
+            </p>
+           </li>
+        </ul>
+    
+{{ else }}
+    <div class="row">
+    <div class="col s12 m6">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">No has agregado al carrito!</span>
+          <p>Si tienes hambre ve a nuestro catalogo y agrega algunas cosas al carrito, te esperamos aqui ;)</p>
+        </div>
+        <div class="card-action">
+          <a href="/catalogo">Ir al catalogo!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<br><br><br>
+{{/each}}
+{{#if productos}}
+    <h3>Total: {{ total }}</h3>
+    <a class="waves-effect waves-light btn-large amber">Pagar</a>
+    <br>
+
+{{/if}}

@@ -1,0 +1,46 @@
+
+  <div class="row">
+    <div class="col s12 m6 offset-m3">
+      <div class="card white darken-1">
+        <div class="card-content black-text">
+            <div class="row">
+                <div class="col offset-m4">
+                    <span class="card-title">Modificar Pelicula</span>
+                </div>
+            </div>
+          <form action="/producto/edit/{{producto.id}}" method="POST">
+              <div class="row">
+                <div class="input-field col s12 ">
+                    <input name="name" type="text" value="{{producto.name}}" class="validate" autofocus>
+                    <label for="name">Nombre</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12 ">
+                    <textarea name="description" class="materialize-textarea">{{producto.descripction}}</textarea>
+                    <label for="description">Descripcion</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s4">
+                    <input name="price" type="text" value="{{producto.price}}" class="validate"></textarea>
+                    <label for="price">Precio</label>
+                </div>
+              </div>
+                <div class="row">
+                    <div class="col offset-m8">
+                    <button class="btn waves-effect waves-light" type="submit">Guardar
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+              </div>
+
+                
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

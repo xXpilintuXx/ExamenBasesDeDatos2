@@ -1,0 +1,40 @@
+<div class="container">
+<div class="row">
+    <div class="col s12 m6">
+      <div class="card white darken-1">
+        <div class="card-content black-text">
+          <span class="card-title">Bienvenido {{ user.username }}</span>
+          <ul>
+              <li>Nombre: {{ user.frist_name }} {{ user.last_name  }} </li>
+              <li>Email: {{ user.email }}</li>
+              <br>
+              <li>
+                <a class="waves-effect waves-light btn amber" href="/edit"><i class="material-icons right">edit</i>Configurar</a>
+                <a class="waves-effect waves-light btn amber" href="/logout"><i class="material-icons right">close</i>Cerrar sesion</a>
+              </li>
+          </ul>
+          </div>
+      </div>
+    </div>
+    <div class="col s12 m6">
+      <div class="card white darken-1">
+        <div class="card-content black-text">
+          <span class="card-title">Quieres ver tu historial de compras?</span>
+                <a class="waves-effect waves-light btn amber" href="/user/tickets"><i class="material-icons right">check</i>Click aqui</a>
+          </ul>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m8">
+          <div class="card white darken-1">
+          <div class="card-content black-text">
+            <span class="card-title">Administra tus productos aqui!</span>
+                  <a class="waves-effect waves-light btn amber" href="/profile/products"><i class="material-icons right">check</i>Ver productos</a>
+            </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>

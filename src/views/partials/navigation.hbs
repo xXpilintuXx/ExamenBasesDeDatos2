@@ -1,0 +1,28 @@
+<nav>
+    <div class="nav-wrapper cyan darken-2 z-depth-2">
+      <a href="/" class="brand-logo">LewiStore</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {{#if user}}
+        <li><a href="/catalogo">Catalago</a></li>
+        <li><a href="/carrito">Carro<span class="new badge light-blue darken-4" data-badge-caption="productos">{{ carrito.productos.length }}</span></a></li>
+        <li><a href="/profile">Perfil</a></li>
+        {{else}}
+        <li><a href="/signup">Registrarte</a></li>
+        <li><a href="/login">Iniciar sesion</a></li>
+        {{/if}}
+        </ul>
+    </div>
+  </nav>
+
+  
+  <ul class="sidenav" id="mobile-demo">
+    {{#if user}}
+        <li><a href="/catalogo">Catalago</a></li>
+        <li><a href="/carrito">Carro<span class="new badge light-blue darken-4" data-badge-caption="productos">{{ carrito.productos.length }}</span></a></li>
+        <li><a href="/profile">Perfil</a></li>
+        {{else}}
+        <li><a href="/signup">Registrarte</a></li>
+        <li><a href="/login">Iniciar sesion</a></li>
+        {{/if}}
+  </ul>
